@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringCloud_Shop.iml" filepath="$PROJECT_DIR$/.idea/SpringCloud_Shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_api_entity_api/shop_api_entity_api.iml" filepath="$PROJECT_DIR$/shop_api_entity_api/shop_api_entity_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_basics/shop_basics.iml" filepath="$PROJECT_DIR$/shop_basics/shop_basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_basics_springcloud_eureka/shop_basics_springcloud_eureka.iml" filepath="$PROJECT_DIR$/shop_basics_springcloud_eureka/shop_basics_springcloud_eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_basics_springcloud_zuul/shop_basics_springcloud_zuul.iml" filepath="$PROJECT_DIR$/shop_basics_springcloud_zuul/shop_basics_springcloud_zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_common/shop_common.iml" filepath="$PROJECT_DIR$/shop_common/shop_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_parent/shop_parent.iml" filepath="$PROJECT_DIR$/shop_parent/shop_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_portal/shop_portal.iml" filepath="$PROJECT_DIR$/shop_portal/shop_portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_service_api/shop_service_api.iml" filepath="$PROJECT_DIR$/shop_service_api/shop_service_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_service_api_member/shop_service_api_member.iml" filepath="$PROJECT_DIR$/shop_service_api_member/shop_service_api_member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_service_api_weixin/shop_service_api_weixin.iml" filepath="$PROJECT_DIR$/shop_service_api_weixin/shop_service_api_weixin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_service_impl/shop_service_impl.iml" filepath="$PROJECT_DIR$/shop_service_impl/shop_service_impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_service_impl_member/shop_service_impl_member.iml" filepath="$PROJECT_DIR$/shop_service_impl_member/shop_service_impl_member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_service_impl_weixin/shop_service_impl_weixin.iml" filepath="$PROJECT_DIR$/shop_service_impl_weixin/shop_service_impl_weixin.iml" />
+    </modules>
+  </component>
+</project>

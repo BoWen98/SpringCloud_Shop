@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/shop_parent/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_basics/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_service_ap/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_service_impl/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_service_api/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_common/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_portal/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_basics_springcloud_eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_service_api_weixin/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_api_entity_api/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_service_impl_weixin/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_service_api_member/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_service_impl_member/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_basics_springcloud_zuul/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

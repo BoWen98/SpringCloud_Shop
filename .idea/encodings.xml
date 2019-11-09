@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/shop_api_entity_api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_basics" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_basics_springcloud_eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_basics_springcloud_zuul" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_portal" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_service_api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_service_api_member" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_service_api_weixin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_service_impl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_service_impl_member" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_service_impl_weixin" charset="UTF-8" />
+  </component>
+</project>
