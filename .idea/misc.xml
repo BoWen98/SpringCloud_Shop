@@ -20,6 +20,9 @@
         <option value="$PROJECT_DIR$/shop_service_api_member/pom.xml" />
         <option value="$PROJECT_DIR$/shop_service_impl_member/pom.xml" />
         <option value="$PROJECT_DIR$/shop_basics_springcloud_zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_api_entity_weixin_api/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_common_core/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_api_entity_member_api/pom.xml" />
       </list>
     </option>
   </component>

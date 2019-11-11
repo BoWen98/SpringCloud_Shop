@@ -11,11 +11,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>shop_api_entity_api</artifactId>
+    <packaging>pom</packaging>
 
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.spring4all/swagger-spring-boot-starter -->
+        <dependency>
+            <groupId>com.spring4all</groupId>
+            <artifactId>swagger-spring-boot-starter</artifactId>
         </dependency>
     </dependencies>
 

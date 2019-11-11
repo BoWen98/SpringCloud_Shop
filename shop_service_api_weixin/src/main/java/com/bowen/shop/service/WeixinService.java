@@ -1,5 +1,6 @@
 package com.bowen.shop.service;
 
+
 import com.bowen.shop.entity.WeixinEntity;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

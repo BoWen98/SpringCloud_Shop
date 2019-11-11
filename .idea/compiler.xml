@@ -6,23 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="shop_basics_springcloud_zuul" />
+        <module name="shop_portal" />
         <module name="shop_basics_springcloud_eureka" />
         <module name="shop_service_impl" />
+        <module name="shop_api_entity_member_api" />
         <module name="shop_service_api_weixin" />
         <module name="shop_service_impl_weixin" />
         <module name="shop_service_api_member" />
         <module name="shop_service_impl_member" />
-        <module name="shop_api_entity_api" />
-        <module name="shop_portal" />
+        <module name="shop_api_entity_weixin_api" />
+        <module name="shop_common_core" />
+        <module name="shop_basics_springcloud_zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="shop_api_entity_api" target="1.8" />
+      <module name="shop_api_entity_member_api" target="1.8" />
+      <module name="shop_api_entity_weixin_api" target="1.8" />
       <module name="shop_basics" target="1.8" />
       <module name="shop_basics_springcloud_eureka" target="1.8" />
       <module name="shop_basics_springcloud_zuul" target="1.8" />
       <module name="shop_common" target="1.8" />
+      <module name="shop_common_core" target="1.8" />
       <module name="shop_parent" target="1.8" />
       <module name="shop_portal" target="1.8" />
       <module name="shop_service_api" target="1.8" />
@@ -36,10 +41,13 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="shop_api_entity_api" options="-parameters" />
+      <module name="shop_api_entity_member_api" options="-parameters" />
+      <module name="shop_api_entity_weixin_api" options="-parameters" />
       <module name="shop_basics" options="-parameters" />
       <module name="shop_basics_springcloud_eureka" options="-parameters" />
       <module name="shop_basics_springcloud_zuul" options="-parameters" />
       <module name="shop_common" options="-parameters" />
+      <module name="shop_common_core" options="-parameters" />
       <module name="shop_portal" options="-parameters" />
       <module name="shop_service_api" options="-parameters" />
       <module name="shop_service_api_member" options="-parameters" />
