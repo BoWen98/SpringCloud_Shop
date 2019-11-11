@@ -6,20 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="shop_portal" />
+        <module name="shop_basics_springcloud_zuul" />
         <module name="shop_basics_springcloud_eureka" />
         <module name="shop_service_impl" />
-        <module name="shop_api_entity_member_api" />
         <module name="shop_service_api_weixin" />
         <module name="shop_service_impl_weixin" />
         <module name="shop_service_api_member" />
-        <module name="shop_service_impl_member" />
-        <module name="shop_api_entity_weixin_api" />
+        <module name="shop_portal" />
+        <module name="shop_api_dto_weixin_api" />
+        <module name="shop_api_dto_member_api" />
         <module name="shop_common_core" />
-        <module name="shop_basics_springcloud_zuul" />
+        <module name="shop_service_impl_member" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="shop_api_dto" target="1.8" />
+      <module name="shop_api_dto_member_api" target="1.8" />
+      <module name="shop_api_dto_weixin_api" target="1.8" />
       <module name="shop_api_entity_api" target="1.8" />
       <module name="shop_api_entity_member_api" target="1.8" />
       <module name="shop_api_entity_weixin_api" target="1.8" />
@@ -40,6 +43,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="shop_api_dto_member_api" options="-parameters" />
+      <module name="shop_api_dto_weixin_api" options="-parameters" />
       <module name="shop_api_entity_api" options="-parameters" />
       <module name="shop_api_entity_member_api" options="-parameters" />
       <module name="shop_api_entity_weixin_api" options="-parameters" />

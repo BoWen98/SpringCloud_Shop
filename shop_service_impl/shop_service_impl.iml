@@ -26,8 +26,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="shop_service_api_member" />
-    <orderEntry type="module" module-name="shop_api_entity_member_api" />
-    <orderEntry type="module" module-name="shop_api_entity_weixin_api" />
+    <orderEntry type="module" module-name="shop_api_dto_member_api" />
+    <orderEntry type="module" module-name="shop_api_dto_weixin_api" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-json:2.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.9" level="project" />

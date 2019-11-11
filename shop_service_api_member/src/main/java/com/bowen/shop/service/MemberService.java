@@ -2,7 +2,7 @@ package com.bowen.shop.service;
 
 
 import com.bowen.shop.base.BaseResponse;
-import com.bowen.shop.entity.UserEntity;
+import com.bowen.shop.output.UserOutDTO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -32,5 +32,5 @@ public interface MemberService {
     @ApiImplicitParams({
             @ApiImplicitParam(paramType = "query", name = "mobile", dataType = "String", required = true, value = "用户手机号码"), })
     @PostMapping("/existMobile")
-    BaseResponse<UserEntity> existMobile(@RequestParam("mobile") String mobile);
+    BaseResponse<UserOutDTO> existMobile(@RequestParam("mobile") String mobile);
 }

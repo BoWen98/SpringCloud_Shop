@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>shop_api_entity_api</artifactId>
+        <artifactId>shop_api_dto</artifactId>
         <groupId>com.bowen.shop</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../shop_api_entity_api/pom.xml</relativePath>
+        <relativePath>../shop_api_dto/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>shop_api_entity_weixin_api</artifactId>
+    <artifactId>shop_api_dto_member_api</artifactId>
 
 
 </project>

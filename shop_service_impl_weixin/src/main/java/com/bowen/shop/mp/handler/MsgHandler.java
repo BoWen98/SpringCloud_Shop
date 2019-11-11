@@ -3,8 +3,8 @@ package com.bowen.shop.mp.handler;
 import com.bowen.shop.base.BaseResponse;
 import com.bowen.shop.client.MemberServiceFeign;
 import com.bowen.shop.constants.Constants;
-import com.bowen.shop.entity.UserEntity;
 import com.bowen.shop.mp.builder.TextBuilder;
+import com.bowen.shop.output.UserOutDTO;
 import com.bowen.shop.utils.RedisUtil;
 import com.bowen.shop.utils.RegexUtils;
 import me.chanjar.weixin.common.api.WxConsts.XmlMsgType;
@@ -61,7 +61,7 @@ public class MsgHandler extends AbstractHandler {
         String fromContent = wxMessage.getContent();
         // 2.使用正则表达式验证消息是否为手机号码格式
         if (RegexUtils.checkMobile(fromContent)) {
-            BaseResponse<UserEntity> reusltUserInfo = memberServiceFeign.existMobile(fromContent);
+            BaseResponse<UserOutDTO> reusltUserInfo = memberServiceFeign.existMobile(fromContent);
             if (reusltUserInfo.getCode().equals(Constants.HTTP_RES_CODE_200)) {
                 return new TextBuilder().build("该手机号码" + fromContent + "已经存在!", wxMessage, weixinService);
             }

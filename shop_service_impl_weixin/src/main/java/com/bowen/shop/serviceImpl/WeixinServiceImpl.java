@@ -1,6 +1,5 @@
 package com.bowen.shop.serviceImpl;
 
-import com.bowen.shop.entity.WeixinEntity;
 import com.bowen.shop.service.WeixinService;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,8 +15,5 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WeixinServiceImpl implements WeixinService {
 
-    @Override
-    public WeixinEntity getApp() {
-        return new WeixinEntity("libowen", "376512291");
-    }
+
 }

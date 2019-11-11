@@ -1,20 +1,18 @@
-package com.bowen.shop.entity;
+package com.bowen.shop.input;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
-import java.util.Date;
-
 @Data
-@ApiModel(value = "用户中注册")
-public class UserEntity {
+@ApiModel(value = "用户信息实体类")
+public class UserInpDTO {
 
 	/**
 	 * userid
 	 */
 	@ApiModelProperty(value = "用户id")
-	private Long userid;
+	private Long userId;
 	/**
 	 * 手机号码
 	 */
@@ -44,36 +42,22 @@ public class UserEntity {
 	 * 年龄
 	 */
 	@ApiModelProperty(value = "用户年龄")
-	private Long age;
-	/**
-	 * 注册时间
-	 */
-	@ApiModelProperty(value = "创建时间")
-	private Date createTime;
-	/**
-	 * 修改时间
-	 *
-	 */
-	@ApiModelProperty(value = "修改时间")
-	private Date updateTime;
-	/**
-	 * 账号是否可以用 1 正常 0冻结
-	 */
-	@ApiModelProperty(value = "账号是否可以用 1 正常 0冻结")
-	private char is_avalible;
+	private Integer age;
+
 	/**
 	 * 用户头像
 	 */
 	@ApiModelProperty(value = " 用户头像")
-	private String pic_img;
+	private String picImg;
 	/**
 	 * 用户关联 QQ 开放ID
 	 */
 	@ApiModelProperty(value = "用户关联 QQ 开放ID")
-	private Date qq_openid;
+	private String qqOpenId;
 	/**
 	 * 用户关联 微信 开放ID
 	 */
 	@ApiModelProperty(value = "用户关联 微信 开放ID")
-	private Date WX_OPENID;
+	private String wxOpenId;
+
 }
