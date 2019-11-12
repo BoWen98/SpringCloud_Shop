@@ -50,7 +50,7 @@ public class WxMenuController {
 		// button2.setType(WxConsts.BUTTON_MINIPROGRAM);
 		// button2.setName("小程序");
 		// button2.setAppId("wx286b93c14bbf93aa");
-		// button2.setPagePath("pages/lunar/index.html");
+		// button2.setPagePath("pages/lunar/index");
 		// button2.setUrl("http://mp.weixin.qq.com");
 
 		WxMenuButton button3 = new WxMenuButton();
@@ -154,7 +154,7 @@ public class WxMenuController {
 	/**
 	 * <pre>
 	 * 测试个性化菜单匹配结果
-	 * 详情请见: http://mp.weixin.qq.com/wiki/0/c48ccd12b69ae023159b4bfaa7c39c20.html
+	 * 详情请见: http://mp.weixin.qq.com/wiki/0/c48ccd12b69ae023159b4bfaa7c39c20
 	 * </pre>
 	 *
 	 * @param userid

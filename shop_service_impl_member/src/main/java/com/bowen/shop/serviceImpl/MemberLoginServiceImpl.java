@@ -11,9 +11,12 @@ import com.bowen.shop.mapper.entity.UserDo;
 import com.bowen.shop.mapper.entity.UserTokenDo;
 import com.bowen.shop.service.MemberLoginService;
 import com.bowen.shop.token.GenerateToken;
+import com.bowen.shop.transaction.RedisDataSoureceTransaction;
 import com.bowen.shop.utils.MD5Util;
+import com.bowen.shop.utils.RedisUtil;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.TransactionStatus;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -26,6 +29,10 @@ public class MemberLoginServiceImpl extends BaseApiService<JSONObject> implement
     private GenerateToken generateToken;
     @Autowired
     private UserTokenMapper userTokenMapper;
+    @Autowired
+    private RedisDataSoureceTransaction redisDataSoureceTransaction;
+    @Autowired
+    private RedisUtil redisUtil;
 
     @Override
     public BaseResponse<JSONObject> login(@RequestBody UserLoginInpDTO userLoginInpDTO) {
@@ -65,35 +72,56 @@ public class MemberLoginServiceImpl extends BaseApiService<JSONObject> implement
         // 用户登陆Token Session 区别
         // 用户每一个端登陆成功之后，会对应生成一个token令牌（临时且唯一）存放在redis中作为rediskey value userid
         // 4.获取userid
-        Long userId = userDo.getUserId();
-        // 5.根据userId+loginType 查询当前登陆类型账号之前是否有登陆过，如果登陆过 清除之前redistoken
-        UserTokenDo userTokenDo = userTokenMapper.selectByUserIdAndLoginType(userId, loginType);
-        if (userTokenDo != null) {
-            // 如果登陆过 清除之前redistoken
-            String token = userTokenDo.getToken();
-            Boolean isremoveToken = generateToken.removeToken(token);
-            if (isremoveToken) {
-                //把该token的状态改为1
-                userTokenMapper.updateTokenAvailability(token);
+        TransactionStatus transactionStatus = null;
+        try {
+            // 4.获取userid
+            Long userId = userDo.getUserId();
+            // 5.根据userId+loginType 查询当前登陆类型账号之前是否有登陆过，如果登陆过 清除之前redistoken
+            UserTokenDo userTokenDo = userTokenMapper.selectByUserIdAndLoginType(userId, loginType);
+            transactionStatus = redisDataSoureceTransaction.begin();
+            if (userTokenDo != null) {
+                // 如果登陆过 清除之前redistoken
+                String token = userTokenDo.getToken();
+                // 如果开启redis事务的话，删除的时候 方法会返回false
+                Boolean removeToken = generateToken.removeToken(token);
+                // 把该token的状态改为1
+                int updateTokenAvailability = userTokenMapper.updateTokenAvailability(token);
+                if (!toDaoResult(updateTokenAvailability)) {
+                    return setResultError("系统错误!");
+                }
+
             }
 
+            // .生成对应用户令牌存放在redis中
+
+            // 1.插入新的token
+            UserTokenDo userToken = new UserTokenDo();
+            userToken.setUserId(userId);
+            userToken.setLoginType(userLoginInpDTO.getLoginType());
+
+            String keyPrefix = Constants.MEMBER_TOKEN_KEYPREFIX + loginType;
+            String newToken = generateToken.createToken(keyPrefix, userId + "");
+
+            userToken.setToken(newToken);
+            userToken.setDeviceInfor(deviceInfor);
+            int insertUserToken = userTokenMapper.insertUserToken(userToken);
+            if (!toDaoResult(insertUserToken)) {
+                redisDataSoureceTransaction.rollback(transactionStatus);
+                return setResultError("系统错误!");
+            }
+            JSONObject data = new JSONObject();
+            data.put("token", newToken);
+            redisDataSoureceTransaction.commit(transactionStatus);
+            return setResultSuccess(data);
+        } catch (Exception e) {
+            try {
+                redisDataSoureceTransaction.rollback(transactionStatus);
+            } catch (Exception e2) {
+                // TODO: handle exception
+            }
+            return setResultError("系统错误!");
         }
 
-        // .生成对应用户令牌存放在redis中
-        String keyPrefix = Constants.MEMBER_TOKEN_KEYPREFIX + loginType;
-        String newToken = generateToken.createToken(keyPrefix, userId + "");
-
-        // 1.插入新的token
-        UserTokenDo userToken = new UserTokenDo();
-        userToken.setUserId(userId);
-        userToken.setLoginType(userLoginInpDTO.getLoginType());
-        userToken.setToken(newToken);
-        userToken.setDeviceInfor(deviceInfor);
-        userTokenMapper.insertUserToken(userToken);
-        JSONObject data = new JSONObject();
-        data.put("token", newToken);
-
-        return setResultSuccess(data);
     }
     // 查询用户信息的话如何实现？ redis 与数据库如何保证一致问题
 

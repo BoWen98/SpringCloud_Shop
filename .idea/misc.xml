@@ -24,6 +24,8 @@
         <option value="$PROJECT_DIR$/shop_api_dto_member_api/pom.xml" />
         <option value="$PROJECT_DIR$/shop_api_dato_weixin_api/pom.xml" />
         <option value="$PROJECT_DIR$/shop_api_dto_weixin_api/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_portal_web/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_common_web_core/pom.xml" />
       </list>
     </option>
   </component>
