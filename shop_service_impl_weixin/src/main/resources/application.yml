@@ -3,28 +3,35 @@
 #    org.springframework.web: INFO
 #    com.github.binarywang.demo.wx.mp: DEBUG
 #    me.chanjar.weixin: DEBUG
-#wx:
-#  mp:
-#    configs:
-#      - appId: wx556d7ec62e53d8a6 #（一个公众号的appid）
-#        secret: c61156d32d0029f7b5e106fcaef81a9f #（公众号的appsecret）
-#        token: bowen #（接口配置里的Token值）
-#
+wx:
+  mp:
+    configs:
+      - appId: wx556d7ec62e53d8a6 #（一个公众号的appid）
+        secret: c61156d32d0029f7b5e106fcaef81a9f #（公众号的appsecret）
+        token: bowen #（接口配置里的Token值）
+
 #server:
 #  port: 8200
 #
-#mayikt:
-#  weixin:
-#    registration:
-#      code:
-#        ###微信注册码消息
-#        message:  您的注册码为:%s,期待你的加入，感谢！
-#    ###默认提示消息
-#    default:
-#      registration:
-#        code:
-#          message: 您的消息，我们已经收到,会及时回复给您的!
-#spring:
+mayikt:
+  weixin:
+    registration:
+      code:
+        ###微信注册码消息
+        message:  您的注册码为:%s,期待你的加入，感谢！
+    ###默认提示消息
+    default:
+      registration:
+        code:
+          message: 您的消息，我们已经收到,会及时回复给您的!
+spring:
+#  application:
+#    name: shop-weixin
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/shop_user?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    password: 123456
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
 #  redis:
 #    host: 127.0.0.1
 #    port: 6379
@@ -34,4 +41,3 @@
 #        min-idle: 1
 #        max-active: 1000
 #        max-wait: -1
-#

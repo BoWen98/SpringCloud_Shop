@@ -46,7 +46,8 @@ public class MemberRegisterServiceImpl extends BaseApiService<JSONObject> implem
         if (!verificaWeixinCode.getCode().equals(Constants.HTTP_RES_CODE_200)) {
             return setResultError(verificaWeixinCode.getMsg());
         }
-        // 3.对用户的密码进行加密 // MD5 可以解密 暴力破解
+        //3.对用户的密码进行加密
+        // MD5 可以解密 暴力破解
         String newPassword = MD5Util.MD5(password);
         userInpDTO.setPassword(newPassword);
 

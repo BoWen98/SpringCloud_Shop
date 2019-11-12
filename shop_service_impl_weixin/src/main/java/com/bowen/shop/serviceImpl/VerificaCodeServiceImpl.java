@@ -6,7 +6,6 @@ import com.bowen.shop.base.BaseResponse;
 import com.bowen.shop.constants.Constants;
 import com.bowen.shop.service.VerificaCodeService;
 import com.bowen.shop.utils.RedisUtil;
-import com.bowen.shop.utils.RegexUtils;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,9 +20,6 @@ public class VerificaCodeServiceImpl extends BaseApiService<JSONObject> implemen
     @Override
     public BaseResponse<JSONObject> verificaWeixinCode(String phone, String weixinCode) {
 
-        if (RegexUtils.checkMobile(phone)){
-            return setResultError("请填写正确的手机号码!");
-        }
         // 1.验证码参数是否为空
         if (StringUtils.isEmpty(phone)) {
             return setResultError("手机号码不能为空!");
