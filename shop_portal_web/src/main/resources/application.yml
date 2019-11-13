@@ -18,6 +18,8 @@ spring:
       - classpath:/templates
   application:
     name: shop-portal-web
+  main:
+    allow-bean-definition-overriding: true
 ###服务注册到eureka地址
 eureka:
   client:

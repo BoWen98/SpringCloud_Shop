@@ -13,4 +13,21 @@
     <artifactId>shop_common_web_core</artifactId>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>com.bowen.shop</groupId>
+            <artifactId>shop_common_core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>nl.bitwalker</groupId>
+            <artifactId>UserAgentUtils</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+    </dependencies>
 </project>

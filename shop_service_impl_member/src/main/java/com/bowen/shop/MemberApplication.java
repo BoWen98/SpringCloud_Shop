@@ -1,6 +1,5 @@
 package com.bowen.shop;
 
-import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import com.spring4all.swagger.EnableSwagger2Doc;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -21,7 +20,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableEurekaClient
 @EnableFeignClients
 @EnableSwagger2Doc
-@EnableApolloConfig
+//@EnableApolloConfig
 @MapperScan(basePackages = "com.bowen.shop.mapper")
 public class MemberApplication {
     public static void main(String[] args) {

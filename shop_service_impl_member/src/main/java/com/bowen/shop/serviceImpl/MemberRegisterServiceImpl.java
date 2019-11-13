@@ -29,10 +29,10 @@ public class MemberRegisterServiceImpl extends BaseApiService<JSONObject> implem
     @Transactional
     public BaseResponse<JSONObject> register(@RequestBody UserInpDTO userInpDTO, String registCode) {
         // 1.参数验证
-        String userName = userInpDTO.getUserName();
-        if (StringUtils.isEmpty(userName)) {
-            return setResultError("用户名称不能为空!");
-        }
+        // String userName = userInpDTO.getUserName();
+        // if (StringUtils.isEmpty(userName)) {
+        //     return setResultError("用户名称不能为空!");
+        // }
         String mobile = userInpDTO.getMobile();
         if (StringUtils.isEmpty(mobile)) {
             return setResultError("手机号码不能为空!");
