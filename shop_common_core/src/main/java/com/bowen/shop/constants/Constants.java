@@ -29,7 +29,7 @@ public interface Constants {
     Integer HTTP_RES_CODE_EXISTMOBILE_203 = 203;
 
     // token
-    String MEMBER_TOKEN_KEYPREFIX = "shop_login";
+    String MEMBER_TOKEN_KEYPREFIX = "mt.mb.login";
 
     // 安卓的登陆类型
     String MEMBER_LOGIN_TYPE_ANDROID = "Android";
@@ -41,5 +41,7 @@ public interface Constants {
 
     // 登陆超时时间 有效期 90天
     Long MEMBRE_LOGIN_TOKEN_TIME = 77776000L;
+    // 用户信息不存在
+    Integer HTTP_RES_CODE_NOTUSER_203 = 203;
 
 }

@@ -133,6 +133,12 @@
                 <artifactId>UserAgentUtils</artifactId>
                 <version>${UserAgentUtils.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.itwen</groupId>
+                <artifactId>Sdk4J</artifactId>
+                <version>1.0.0</version>
+            </dependency>
         </dependencies>
 
 

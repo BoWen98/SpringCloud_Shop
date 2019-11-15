@@ -1,4 +1,4 @@
-package com.bowen.shop.potal.web;
+package com.bowen.shop.portal.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

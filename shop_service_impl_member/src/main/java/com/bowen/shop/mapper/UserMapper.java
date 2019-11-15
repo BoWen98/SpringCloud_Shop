@@ -4,6 +4,7 @@ package com.bowen.shop.mapper;
 import com.bowen.shop.mapper.entity.UserDo;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
@@ -24,4 +25,11 @@ public interface UserMapper {
     @Select("SELECT USER_ID AS USERID ,MOBILE AS MOBILE,EMAIL AS EMAIL,PASSWORD AS PASSWORD, USER_NAME AS USER_NAME ,SEX AS SEX ,AGE AS AGE ,CREATE_TIME AS CREATETIME,IS_AVALIBLE AS ISAVALIBLE,PIC_IMG AS PICIMG,QQ_OPENID AS QQOPENID,WX_OPENID AS WXOPENID"
             + " FROM shop_user WHERE user_Id=#{userId}")
     UserDo findByUserId(@Param("userId") Long userId);
+
+    @Select("SELECT USER_ID AS USERID ,MOBILE AS MOBILE,EMAIL AS EMAIL,PASSWORD AS PASSWORD, USER_NAME AS USER_NAME ,SEX AS SEX ,AGE AS AGE ,CREATE_TIME AS CREATETIME,IS_AVALIBLE AS ISAVALIBLE,PIC_IMG AS PICIMG,QQ_OPENID AS QQOPENID,WX_OPENID AS WXOPENID"
+            + " FROM shop_user WHERE qq_openid=#{qqOpenId}")
+    UserDo findByOpenId(@Param("qqOpenId") String qqOpenId);
+
+    @Update("update shop_user set QQ_OPENID =#{qqOpenId} WHERE USER_ID=#{userId}")
+    int updateUserOpenId(@Param("qqOpenId") String qqOpenId, @Param("userId") Long userId);
 }

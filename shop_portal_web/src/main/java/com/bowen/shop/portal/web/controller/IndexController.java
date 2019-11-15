@@ -1,9 +1,9 @@
-package com.bowen.shop.potal.web.controller;
+package com.bowen.shop.portal.web.controller;
 
 import com.bowen.shop.base.BaseResponse;
 import com.bowen.shop.output.UserOutDTO;
-import com.bowen.shop.potal.web.constants.WebConstants;
-import com.bowen.shop.potal.web.feign.MemberServiceFeign;
+import com.bowen.shop.portal.web.constants.WebConstants;
+import com.bowen.shop.portal.web.feign.MemberServiceFeign;
 import com.bowen.shop.web.core.base.BaseWebController;
 import com.bowen.shop.web.core.utils.CookieUtils;
 import org.apache.commons.lang.StringUtils;

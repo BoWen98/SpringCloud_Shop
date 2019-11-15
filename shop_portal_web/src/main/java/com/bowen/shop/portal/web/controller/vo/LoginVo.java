@@ -1,4 +1,4 @@
-package com.bowen.shop.potal.web.controller.vo;
+package com.bowen.shop.portal.web.controller.vo;
 
 import lombok.Data;
 

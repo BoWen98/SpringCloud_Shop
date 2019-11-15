@@ -1,10 +1,10 @@
-package com.bowen.shop.potal.web.controller;
+package com.bowen.shop.portal.web.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.bowen.shop.base.BaseResponse;
 import com.bowen.shop.input.UserInpDTO;
-import com.bowen.shop.potal.web.controller.vo.RegisterVo;
-import com.bowen.shop.potal.web.feign.MemberRegisterServiceFeign;
+import com.bowen.shop.portal.web.controller.vo.RegisterVo;
+import com.bowen.shop.portal.web.feign.MemberRegisterServiceFeign;
 import com.bowen.shop.web.core.base.BaseWebController;
 import com.bowen.shop.web.core.bean.EntityBeanUtils;
 import com.bowen.shop.web.core.utils.RandomValidateCodeUtil;

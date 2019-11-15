@@ -92,6 +92,11 @@ public class MemberLoginServiceImpl extends BaseApiService<JSONObject> implement
 
             }
 
+            // 如果有传递openid参数，修改到数据中
+            String qqOpenId = userLoginInpDTO.getQqOpenId();
+            if (!StringUtils.isEmpty(qqOpenId)) {
+                userMapper.updateUserOpenId(qqOpenId, userId);
+            }
             // .生成对应用户令牌存放在redis中
 
             // 1.插入新的token

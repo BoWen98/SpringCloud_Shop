@@ -1,4 +1,4 @@
-package com.bowen.shop.potal.web.code;
+package com.bowen.shop.portal.web.code;
 
 import com.bowen.shop.web.core.utils.RandomValidateCodeUtil;
 import org.springframework.stereotype.Controller;
