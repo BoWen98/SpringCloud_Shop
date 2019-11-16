@@ -8,12 +8,14 @@
       <module fileurl="file://$PROJECT_DIR$/shop_api_dto_weixin_api/shop_api_dto_weixin_api.iml" filepath="$PROJECT_DIR$/shop_api_dto_weixin_api/shop_api_dto_weixin_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop_basics/shop_basics.iml" filepath="$PROJECT_DIR$/shop_basics/shop_basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop_basics_springcloud_eureka/shop_basics_springcloud_eureka.iml" filepath="$PROJECT_DIR$/shop_basics_springcloud_eureka/shop_basics_springcloud_eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_basics_springcloud_xxl_sso_server/shop_basics_springcloud_xxl_sso_server.iml" filepath="$PROJECT_DIR$/shop_basics_springcloud_xxl_sso_server/shop_basics_springcloud_xxl_sso_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop_basics_springcloud_zuul/shop_basics_springcloud_zuul.iml" filepath="$PROJECT_DIR$/shop_basics_springcloud_zuul/shop_basics_springcloud_zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop_common/shop_common.iml" filepath="$PROJECT_DIR$/shop_common/shop_common.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop_common_core/shop_common_core.iml" filepath="$PROJECT_DIR$/shop_common_core/shop_common_core.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop_common_web_core/shop_common_web_core.iml" filepath="$PROJECT_DIR$/shop_common_web_core/shop_common_web_core.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop_parent/shop_parent.iml" filepath="$PROJECT_DIR$/shop_parent/shop_parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop_portal/shop_portal.iml" filepath="$PROJECT_DIR$/shop_portal/shop_portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_portal_pay_web/shop_portal_pay_web.iml" filepath="$PROJECT_DIR$/shop_portal_pay_web/shop_portal_pay_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop_portal_web/shop_portal_web.iml" filepath="$PROJECT_DIR$/shop_portal_web/shop_portal_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop_service_api/shop_service_api.iml" filepath="$PROJECT_DIR$/shop_service_api/shop_service_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop_service_api_member/shop_service_api_member.iml" filepath="$PROJECT_DIR$/shop_service_api_member/shop_service_api_member.iml" />

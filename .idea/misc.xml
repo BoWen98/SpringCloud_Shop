@@ -26,6 +26,8 @@
         <option value="$PROJECT_DIR$/shop_api_dto_weixin_api/pom.xml" />
         <option value="$PROJECT_DIR$/shop_portal_web/pom.xml" />
         <option value="$PROJECT_DIR$/shop_common_web_core/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_basics_springcloud_xxl_sso_server/pom.xml" />
+        <option value="$PROJECT_DIR$/shop_portal_pay_web/pom.xml" />
       </list>
     </option>
   </component>
