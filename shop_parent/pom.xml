@@ -22,7 +22,7 @@
         <weixin-java-mp.version>3.3.0</weixin-java-mp.version>
         <xstream.version>1.4.10</xstream.version>
         <fastjson.version>1.2.57</fastjson.version>
-        <mysql-connector-java.version>6.0.6</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.16</mysql-connector-java.version>
         <mybatis.version>2.1.0</mybatis.version>
         <UserAgentUtils.version>1.2.4</UserAgentUtils.version>
     </properties>
