@@ -20,7 +20,7 @@
         <apollo-core.version>1.5.0</apollo-core.version>
         <guava.version>23.0</guava.version>
         <weixin-java-mp.version>3.3.0</weixin-java-mp.version>
-        <xstream.version>1.4.10</xstream.version>
+        <xstream.version>1.4.13-java7</xstream.version>
         <fastjson.version>1.2.57</fastjson.version>
         <mysql-connector-java.version>6.0.6</mysql-connector-java.version>
         <mybatis.version>2.1.0</mybatis.version>
